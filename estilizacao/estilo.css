@@ -19,12 +19,12 @@
     src: url('fontes/Bellerose.ttf');
 }
 body{
-    background:black;
+    background: #e7e7e7;
     margin: 0px;
     padding:0px;
 }
 header{
-    background:black;
+    background:#e7e7e7;
     height: 500px;
 }
 header img{
@@ -122,7 +122,7 @@ h1{
     font-family: franchise;
     font-size: 70px;
     letter-spacing: 1px;
-    color: #ebbdcb;
+    color: #1d1c1c;
     width: 50%;
     margin-left: 30%;
     margin-top: 10%;
@@ -132,13 +132,13 @@ h1{
 h2{
     margin-top:0px;
     font-family: athena;
-    color:#f5105c;
+    color:#1d1c1c;
     padding-top:5%;
 }
 h3{
     font-family:athena;;
     letter-spacing: 1px;
-    color: rgb(221, 56, 106);
+    color: #1d1c1c;
     width: 50%;
     margin-left:40% ;
     margin-top: 0px;
@@ -146,7 +146,7 @@ h3{
 }
 h4{
     font-family: athena;
-    color:rgb(235, 189, 203);
+    color:#1d1c1c;
     margin-left: 15%;
     font-size:16px;
 }
@@ -155,8 +155,8 @@ section{
     margin: 5%;
     height: 100%;
     padding: 5%;
-    border-radius: 10%;
-    background: rgb(10, 10, 10);
+    border-radius: 5%;
+    background: #dad9d9;
 
 }
 
@@ -166,10 +166,10 @@ section{
 }
 #sobre img{
     width: 100%;
-    opacity: 60%;
+    opacity: 90%;
 }
 #sobre div p{
-    color: rgb(192, 63, 106);
+    color: #1d1c1c;
     font-family: athena;
     letter-spacing: 2px;
 }
@@ -179,41 +179,39 @@ section{
 
 #projetos .card_projeto{
     width: 25%;
+    height: 40%;
     margin:1%;
     float: left;
     padding:1.5%;
-    border: black solid 5px;
+    border: black solid 1px;
     border-radius: 5%;
 
 }
 #projetos .card_projeto p{
     font-family: athena;
-    color:rgb(235, 189, 203);
+    color:#1d1c1c;
 
 }
 #projetos .card_projeto img{
     width: 100%;
-    opacity: 30%;
 }
-#projetos .card_projeto img:hover{
-    opacity: 100%;
-}
+
 #contato h1{
     font-family: franchise;
     font-size: 50px;
     letter-spacing: 1px;
-    color: #ebbdcb;
+    color: #1d1c1c;
     width: 50%;
     margin-left: 30%;
     margin-top: 10%;
 }
 #contato p{
     font-family: athena;
-    color:rgb(235, 189, 203);
+    color:#1d1c1c;
 }
 #contato .links p a{
     font-family: athena;
-    color:rgb(235, 189, 203);
+    color:#1d1c1c;
     text-decoration:none;
     padding:2%;
 }
@@ -236,7 +234,71 @@ section{
 
 #rodape p{
     font-family: athena;
-    color:rgb(235, 189, 203);
+    color:#1d1c1c;
     margin-left: 45%;
     font-size:14px;
 }
+
+  
+@media only screen and (max-device-width: 600px) {
+    body{
+        width: 100%;
+    }
+    nav ul li a{
+        letter-spacing: 1px;
+    }
+    header{
+        height:30%;
+    }
+    nav ul .link_menu{
+        margin: 15%;
+        padding-left: 0;
+    }
+    section{
+        height: 3000px;
+    }
+     h2{
+        font-size:25px;
+    }
+    #contato h1{
+        font-size: 30px;
+    }
+    #contato h2{
+        font-size:25px;
+    }
+    #sobre,#projetos,#contato{
+        height: auto;
+        margin-top:0px;   
+        font-size:15px;
+    }
+    #sobre div{
+        width: 90%;
+        padding:5%;
+        float: none;
+    }
+    #sobre img{
+        width: 80%;
+    }
+    #projetos{
+         height: auto;
+    }
+    #projetos .card_projeto{
+        width: 100%;
+    
+    }
+    #contato{
+        height: 800px;
+    }
+    #contato .icones{
+        width: 10%;
+    }
+    #contato .links{
+        padding-top:100%;
+        margin-left:5%;
+    }
+    #contato .links p{
+        width: 100%;
+        margin-left: 10%;
+    }
+}
+ 
